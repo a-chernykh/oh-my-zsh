@@ -20,3 +20,6 @@ alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset 
 # rails aliases
 alias r='rails'
 alias be='bundle exec'
+alias b='bundle'
+
+alias e='subl'
