@@ -49,7 +49,7 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
-PATH=$PATH:~/bin:/Users/akhkharu/adt-bundle-mac-x86_64-20130522/sdk/platform-tools
+PATH=$PATH:~/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 eval "$(direnv hook $0)"
