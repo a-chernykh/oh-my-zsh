@@ -23,5 +23,6 @@ alias gt='git tag'
 alias r='rails'
 alias be='bundle exec'
 alias b='bundle'
+alias test_migration='rake db:migrate && rake db:rollback && rake db:migrate'
 
 alias e='subl'
