@@ -1,4 +1,3 @@
-export GIT_EDITOR='vim'
 export EDITOR='subl'
 export ANDROID_HOME='/opt/android/android-sdk-macosx'
 export ANDROID_NDK_HOME='/opt/android/android-ndk-r9'
