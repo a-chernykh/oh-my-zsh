@@ -1,6 +1,6 @@
 PROMPT='%{$fg[cyan]%}%2c %{$fg_bold[blue]%}$(git_prompt_info)%{$fg_bold[blue]%} %# %{$reset_color%}'
 
-RPROMPT='$(rvm_prompt_info)%}'
+# RPROMPT='$(rvm_prompt_info)%}'
 
 ZSH_THEME_RVM_PROMPT_PREFIX="%{$fg[blue]%}(%{$fg[red]%}"
 ZSH_THEME_RVM_PROMPT_SUFFIX="%{$fg[blue]%})%{$reset_color%}"
