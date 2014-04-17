@@ -53,3 +53,5 @@ PATH=$PATH:~/bin
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 eval "$(direnv hook $0)"
+
+cd ..;1 # workaround for rvm in tmux http://stackoverflow.com/a/6097090/245652
