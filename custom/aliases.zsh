@@ -22,9 +22,12 @@ alias gt='git tag'
 # rails aliases
 alias r='rails'
 alias be='bundle exec'
+alias bo='bundle open'
 alias b='bundle'
 alias test_migration='rake db:migrate && rake db:rollback && rake db:migrate'
 alias migrate_both='rake db:migrate && RAILS_ENV=test rake db:migrate'
 alias rollback_both='rake db:rollback && RAILS_ENV=test rake db:rollback'
 
 alias e='subl'
+
+alias dbundle='ruby -I /Users/akhkharu/projects/gems/bundler/lib /Users/akhkharu/projects/gems/bundler/bin/bundle'
