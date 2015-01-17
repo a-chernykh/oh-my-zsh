@@ -4,6 +4,7 @@ alias g='grep'
 alias o='open'
 alias h='history'
 alias e='subl'
+alias v='vagrant'
 
 # git aliases
 alias ga='git add'
