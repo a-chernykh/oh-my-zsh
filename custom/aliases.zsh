@@ -21,7 +21,7 @@ alias gs='git status -sb'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gt='git tag'
-alias delete_merged_branches='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias delete_merged_branches='git branch --merged | grep -v "releases/" | grep -v "\*" | xargs -n 1 git branch -d'
 
 # rails aliases
 alias r='rails'
