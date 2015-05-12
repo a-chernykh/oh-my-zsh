@@ -5,6 +5,7 @@ alias o='open'
 alias h='history'
 alias e='subl'
 alias v='vagrant'
+alias t='tmux'
 
 # git aliases
 alias ga='git add'
