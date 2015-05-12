@@ -1,4 +1,5 @@
-export EDITOR=vim
+export EDITOR=mvim
+export GIT_EDITOR="mvim --remote-wait"
 export ANDROID_HOME='/opt/android/android-sdk-macosx'
 export ANDROID_NDK_HOME='/opt/android/android-ndk-r9'
 export OPENCV_SDK_HOME='/opt/android/OpenCV-2.4.6-android-sdk'
