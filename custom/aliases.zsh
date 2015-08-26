@@ -38,3 +38,12 @@ alias t='tmux'
 alias tml="tmux list-sessions"
 alias tma="tmux -2 attach -t $1"
 alias tmk="tmux kill-session -t $1"
+
+# fuck
+alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+
+# golang
+function gocdfunc() {
+  cd `find $GOPATH/src -iname "${1}*" -type d -d 3`
+}
+alias gocd=gocdfunc
