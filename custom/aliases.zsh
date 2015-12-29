@@ -48,3 +48,15 @@ function gocdfunc() {
   cd `find $GOPATH/src -iname "${1}*" -type d -d 3`
 }
 alias gocd=gocdfunc
+
+# docker
+function dcrebuild() {
+  docker-compose stop $1
+  docker-compose rm -f $1
+  docker-compose build $1
+  docker-compose up -d $1
+}
+alias de='docker exec'
+alias dcr=dcrebuild
+alias dcl='docker-compose logs'
+alias dcb='docker-compose build'
