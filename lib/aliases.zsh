@@ -33,4 +33,3 @@ alias la='ls -lAh'
 alias sl=ls # often screw this up
 
 alias afind='ack-grep -il'
-
