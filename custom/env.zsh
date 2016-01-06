@@ -10,6 +10,5 @@ export AWS_ELB_HOME='/usr/local/elb/ElasticLoadBalancing-1.0.35.0'
 
 export GOPATH='/usr/local/opt/go'
 export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:$ANDROID_NDK_HOME:/usr/local/sbin:$EC2_HOME/bin:$AWS_ELB_HOME/bin:$GOPATH/bin"
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home'
 
 export DISABLE_AUTO_TITLE=true
