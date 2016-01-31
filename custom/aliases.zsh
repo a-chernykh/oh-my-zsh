@@ -21,7 +21,7 @@ alias gco='git checkout'
 alias gb='git branch'
 alias gs='git status -sb'
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
-alias glg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+alias glg='pretty_git_log'
 alias gt='git tag'
 alias delete_merged_branches='git branch --merged | grep -v "releases/" | grep -v "\*" | xargs -n 1 git branch -d'
 
@@ -50,13 +50,7 @@ function gocdfunc() {
 alias gocd=gocdfunc
 
 # docker
-function dcrebuild() {
-  docker-compose stop $1
-  docker-compose rm -f $1
-  docker-compose build $1
-  docker-compose up -d $1
-}
 alias de='docker exec'
-alias dcr=dcrebuild
+alias dv='docker volume'
 alias dcl='docker-compose logs'
 alias dcb='docker-compose build'
