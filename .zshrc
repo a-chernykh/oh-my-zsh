@@ -56,3 +56,25 @@ eval "$(direnv hook $0)"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# Kubernetes
+export KUBERNETES_PROVIDER=aws
+export PATH=~/kubernetes/platforms/darwin/amd64:$PATH
+
+source ~/.iterm2_shell_integration.`basename $SHELL`
+
+export PATH=$PATH:~/dcos/bin
+
+export ANDROID_HOME=/usr/local/opt/android-sdk
+export GRADLE_HOME=/usr/local/Cellar/gradle
+
+$(/Users/andreychernih/projects/jiff_global_rb/bin/env_setup)
+
+export PATH=/usr/local/openresty/bin:/usr/local/openresty/nginx/sbin:/usr/local/openresty/luajit/bin:$PATH
+
+# dlite compatibility
+export DOCKER_API_VERSION=1.22
+
+# so that Ctrl key mapping works in vim
+# http://stackoverflow.com/questions/9445902/vimrc-help-trying-to-map-ctrl-s-to-w
+stty -ixon
