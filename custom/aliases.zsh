@@ -52,5 +52,6 @@ alias gocd=gocdfunc
 # docker
 alias de='docker exec'
 alias dv='docker volume'
+alias dc='docker-compose'
 alias dcl='docker-compose logs'
 alias dcb='docker-compose build'
