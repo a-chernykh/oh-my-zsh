@@ -54,3 +54,9 @@ alias de='docker exec'
 alias dv='docker volume'
 alias dcl='docker-compose logs'
 alias dcb='docker-compose build'
+
+# Terraform
+alias tf='terraform'
+
+# Kubernetes
+alias k='kubectl'
