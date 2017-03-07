@@ -73,7 +73,7 @@ $(/Users/andreychernih/projects/jiff_global_rb/bin/env_setup)
 export PATH=/usr/local/openresty/bin:/usr/local/openresty/nginx/sbin:/usr/local/openresty/luajit/bin:$PATH
 
 # dlite compatibility
-export DOCKER_API_VERSION=1.22
+# export DOCKER_API_VERSION=1.22
 
 # so that Ctrl key mapping works in vim
 # http://stackoverflow.com/questions/9445902/vimrc-help-trying-to-map-ctrl-s-to-w
