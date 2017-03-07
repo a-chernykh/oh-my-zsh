@@ -78,3 +78,5 @@ export PATH=/usr/local/openresty/bin:/usr/local/openresty/nginx/sbin:/usr/local/
 # so that Ctrl key mapping works in vim
 # http://stackoverflow.com/questions/9445902/vimrc-help-trying-to-map-ctrl-s-to-w
 stty -ixon
+
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/vault_pass
