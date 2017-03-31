@@ -80,3 +80,4 @@ export PATH=/usr/local/openresty/bin:/usr/local/openresty/nginx/sbin:/usr/local/
 stty -ixon
 
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible/vault_pass
+export JMETER_HOME=/Users/andreychernih/apache-jmeter-3.0

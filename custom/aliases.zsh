@@ -35,8 +35,9 @@ alias migrate_both='rake db:migrate && RAILS_ENV=test rake db:migrate'
 alias rollback_both='rake db:rollback && RAILS_ENV=test rake db:rollback'
 
 # tmux aliases
-alias t='tmux'
+alias tm='tmux'
 alias tml="tmux list-sessions"
+alias tmn="tmux new -s \$(basename \`pwd\`)"
 alias tma="tmux -2 attach -t $1"
 alias tmk="tmux kill-session -t $1"
 
