@@ -39,6 +39,7 @@ alias tm='tmux'
 alias tml="tmux list-sessions"
 alias tmn="tmux new -s \$(basename \`pwd\`)"
 alias tma="tmux -2 attach -t $1"
+alias tmac="tmux -2 attach -t \$(basename \`pwd\`)"
 alias tmk="tmux kill-session -t $1"
 
 # fuck
