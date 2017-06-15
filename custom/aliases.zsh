@@ -64,3 +64,5 @@ alias tf='terraform'
 
 # Kubernetes
 alias k='kubectl'
+
+alias bundler_ctags='bundle show --paths|xargs ctags -R -f tags'
