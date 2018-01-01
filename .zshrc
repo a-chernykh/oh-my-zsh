@@ -78,3 +78,4 @@ export PATH=/usr/local/openresty/bin:/usr/local/openresty/nginx/sbin:/usr/local/
 stty -ixon
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#eval $(thefuck --alias)

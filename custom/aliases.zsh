@@ -38,6 +38,11 @@ alias rollback_both='rake db:rollback && RAILS_ENV=test rake db:rollback'
 # tmux aliases
 alias tm='tmux'
 alias tml="tmux list-sessions"
+function tmsfunc() {
+  name=$(basename `pwd`)
+  tmux -2 attach -t ${name} || tmux new -s ${name}
+}
+alias tms=tmsfunc
 alias tmn="tmux new -s \$(basename \`pwd\`)"
 alias tma="tmux -2 attach -t $1"
 alias tmac="tmux -2 attach -t \$(basename \`pwd\`)"
