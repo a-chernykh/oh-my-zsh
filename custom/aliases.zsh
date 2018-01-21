@@ -49,7 +49,7 @@ alias tmac="tmux -2 attach -t \$(basename \`pwd\`)"
 alias tmk="tmux kill-session -t $1"
 
 # fuck
-alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
+# alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
 
 # golang
 function gocdfunc() {
