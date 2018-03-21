@@ -1,4 +1,5 @@
 ENVS=(
+  ops
   dev
   qa
   stage

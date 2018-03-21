@@ -1,3 +1,5 @@
+alias vi=vim
+
 alias ll='ls -lh'
 alias rm='rm -i'
 alias g='grep'
