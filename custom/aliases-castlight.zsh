@@ -5,6 +5,9 @@ ENVS=(
   stage
   pre
   prod
+  test
+  qaa
+  int
 )
 
 function k8s_nodes {
