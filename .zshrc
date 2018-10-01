@@ -1,3 +1,5 @@
+zmodload zsh/zprof
+
 # Customs
 LANG=en_US.UTF-8
 
@@ -43,35 +45,18 @@ DISABLE_CORRECTION="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx vagrant)
+plugins=(git osx)
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
 PATH=$PATH:~/bin
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-eval "$(direnv hook $0)"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Kubernetes
-export KUBERNETES_PROVIDER=aws
-export PATH=~/kubernetes/platforms/darwin/amd64:$PATH
-
-export PATH=$PATH:~/dcos/bin
 
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export GRADLE_HOME=/usr/local/Cellar/gradle
 
 $(/Users/achernykh/projects/jiff_global_rb/bin/env_setup)
-
-export PATH=/usr/local/openresty/bin:/usr/local/openresty/nginx/sbin:/usr/local/openresty/luajit/bin:$PATH
-
-# dlite compatibility
-# export DOCKER_API_VERSION=1.22
 
 # so that Ctrl key mapping works in vim
 # http://stackoverflow.com/questions/9445902/vimrc-help-trying-to-map-ctrl-s-to-w
@@ -79,3 +64,12 @@ stty -ixon
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval $(thefuck --alias)
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+zprof
