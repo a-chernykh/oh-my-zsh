@@ -73,3 +73,9 @@ alias tf='terraform'
 alias k='kubectl'
 
 alias bundler_ctags='bundle show --paths|xargs ctags -R -f tags'
+
+# Notifications
+alias nbeep='afplay /System/Library/Sounds/Ping.aiff -v 2'
+function ntext() {
+  osascript -e "display notification \"${1:-done}\" with title \"Terminal notification\""
+}
