@@ -17,7 +17,7 @@ function k8s_nodes {
     profile=DEV
   fi
 
-  AWS_DEFAULT_OUTPUT=table aws --profile=$profile ec2 describe-instances --filters="Name=tag:KubernetesCluster,Values=$1.jiff.kube" --query="Reservations[*].Instances[*].[State.Name, InstanceId, PrivateIpAddress, Tags[?Key=='Name'].Value | [0]]"
+  AWS_DEFAULT_OUTPUT=table aws --no-verify-ssl --profile=$profile ec2 describe-instances --filters="Name=tag:KubernetesCluster,Values=$1.jiff.kube" --query="Reservations[*].Instances[*].[State.Name, InstanceId, PrivateIpAddress, Tags[?Key=='Name'].Value | [0]]"
 }
 
 for env in ${ENVS[@]}; do
