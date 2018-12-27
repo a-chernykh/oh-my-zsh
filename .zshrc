@@ -60,7 +60,7 @@ PATH=$PATH:~/bin
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export GRADLE_HOME=/usr/local/Cellar/gradle
 
-$(/Users/achernykh/projects/jiff_global_rb/bin/env_setup)
+[[ -a /Users/achernykh/projects/jiff_global_rb/bin/env_setup ]] && $(/Users/achernykh/projects/jiff_global_rb/bin/env_setup)
 
 # so that Ctrl key mapping works in vim
 # http://stackoverflow.com/questions/9445902/vimrc-help-trying-to-map-ctrl-s-to-w
@@ -90,5 +90,7 @@ fuck () {
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 # [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+eval "$(rbenv init -)"
 
 #zprof
