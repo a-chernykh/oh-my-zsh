@@ -1,8 +1,15 @@
 alias vi=vim
 
+alias cd..='cd ..'
+alias cd...='cd ...'
+alias cd....='cd ....'
+
 alias ll='ls -lh'
 alias rm='rm -i'
-alias g='grep'
+function grepfunc() {
+  grep -v grep | grep $@
+}
+alias g=grepfunc
 alias o='open'
 alias h='history'
 alias e='subl'
