@@ -4,3 +4,4 @@ projects.zsh
 # temp files directories
 cache/
 log/
+custom/private-aliases.zsh
