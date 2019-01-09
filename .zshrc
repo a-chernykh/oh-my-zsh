@@ -55,8 +55,6 @@ plugins=(git osx)
 
 source $ZSH/oh-my-zsh.sh
 
-PATH=$PATH:~/bin
-
 export ANDROID_HOME=/usr/local/opt/android-sdk
 export GRADLE_HOME=/usr/local/Cellar/gradle
 
