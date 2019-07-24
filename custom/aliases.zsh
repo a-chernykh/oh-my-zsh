@@ -53,9 +53,11 @@ function tmsfunc() {
 }
 alias tms=tmsfunc
 alias tmn="tmux new -s \$(basename \`pwd\`)"
-alias tma="tmux -2 attach -t $1"
 alias tmac="tmux -2 attach -t \$(basename \`pwd\`)"
+
+alias tma="tmux -2 attach -t $1"
 alias tmk="tmux kill-session -t $1"
+alias tmns="tmux new -s $1"
 
 # fuck
 # alias fuck='eval $(thefuck $(fc -ln -1 | tail -n 1)); fc -R'
