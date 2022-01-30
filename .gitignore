@@ -5,3 +5,10 @@ projects.zsh
 cache/
 log/
 custom/private-aliases.zsh
+# custom files
+custom/
+# temp files directories
+cache/
+log/
+*.swp
+.DS_Store
